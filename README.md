@@ -108,13 +108,9 @@ npm run build
 npm run dev
 ```
 
-## License
-
-Apache-2.0
-
 ## Author
 
-Erth AI, Inc.
+[GitHub Repository](https://github.com/przemyslaw-sobolewski-dev)
 
 ## Repository
 

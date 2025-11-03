@@ -1,6 +1,6 @@
 {
   "name": "@przemek-s/json-viewer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A beautiful JSON viewer and editor component for React",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
