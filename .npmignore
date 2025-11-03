@@ -1,0 +1,30 @@
+# Source files
+src/
+styles/
+
+# Config files
+.env
+.env.*
+.vscode/
+.git/
+.gitignore
+tsconfig.json
+tsconfig.package.json
+rollup.config.js
+postcss.config.js
+tailwind.config.js
+remix.config.js
+remix.env.d.ts
+
+# Development
+node_modules/
+.cache/
+build/
+public/
+.DS_Store
+.mf/
+meta.json
+stats.html
+jsonDocs/
+
+# Only keep dist folder and essential files

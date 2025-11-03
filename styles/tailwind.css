@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&family=Roboto+Mono&display=swap");
 
-@tailwind base;
+/* tailwindcss-scoped-preflight będzie automatycznie dodawał scoped base styles */
 @tailwind components;
 @tailwind utilities;
 
@@ -19,17 +19,20 @@
   }
 }
 
-/* Custom Scrollbar Styles */
-.custom-scrollbar::-webkit-scrollbar {
+.tw-preflight .custom-scrollbar::-webkit-scrollbar {
   width: 0.75rem;
 }
 
-.custom-scrollbar::-webkit-scrollbar-track {
+.tw-preflight .custom-scrollbar::-webkit-scrollbar-track {
   background: transparent;
 }
 
-.custom-scrollbar::-webkit-scrollbar-thumb {
+.tw-preflight .custom-scrollbar::-webkit-scrollbar-thumb {
   background: #334155;
   border-radius: 0.5rem;
   border: 2px solid #0f172a;
+}
+
+.z-1000 {
+  z-index: 1000;
 }

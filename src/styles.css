@@ -1,0 +1,22 @@
+/* JSON Viewer Styles */
+/* Import Tailwind if needed, otherwise these are base styles */
+
+.tw-preflight {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.tw-preflight * {
+  box-sizing: border-box;
+}
+
+/* Override default list styles */
+.tw-preflight ol,
+.tw-preflight ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

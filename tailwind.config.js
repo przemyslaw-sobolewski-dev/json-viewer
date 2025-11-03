@@ -1,6 +1,14 @@
+const {
+  scopedPreflightStyles,
+  isolateInsideOfContainer,
+} = require("tailwindcss-scoped-preflight");
+
 module.exports = {
-  content: ["./app/**/*.{js,ts,jsx,tsx}"],
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class",
+  corePlugins: {
+    preflight: false,
+  },
   theme: {
     fontSize: {
       tiny: ".5rem", // 8px
@@ -35,5 +43,11 @@ module.exports = {
   variants: {
     outline: ["focus"],
   },
-  plugins: [require("@tailwindcss/forms"), require("tailwindcss-radix")()],
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("tailwindcss-radix")(),
+    scopedPreflightStyles({
+      isolationStrategy: isolateInsideOfContainer(".tw-preflight"),
+    }),
+  ],
 };
